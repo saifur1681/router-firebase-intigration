@@ -15,7 +15,7 @@ const useFirebase = () => {
         onAuthStateChanged(auth, user => {
             setUser(user);
         })
-    }, [])
+    }, []);
 
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
@@ -26,6 +26,6 @@ const useFirebase = () => {
             })
     }
     return { user, signInWithGoogle }
-}
+};
 
 export default useFirebase;
