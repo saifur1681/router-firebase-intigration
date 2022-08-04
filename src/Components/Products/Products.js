@@ -7,17 +7,17 @@ import app from '../../Firebase-init';
 
 const auth= getAuth(app);
 
-const Home = () => {
-   const [user]= useAuthState(auth)
+const Products = () => {
+   const [user]= useAuthState(auth);
 
     return (
         <div>
-            <h3>This is Home</h3>
+            <h2>This is Products</h2>
             {
-                user ? user.displayName : 'No Body'
+                user ? "Current User " + user.displayName : "There is no user"
             }
         </div>
     );
 };
 
-export default Home;
+export default Products;
