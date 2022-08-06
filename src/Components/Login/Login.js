@@ -6,8 +6,8 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import app from '../../Firebase-init';
 
 
-const auth = getAuth(app);
 
+const auth = getAuth(app);
 
 const Login = () => {
 
@@ -21,7 +21,7 @@ const Login = () => {
             .then(() => {
                 navigate(from, { replace: true });
             })
-    }
+    };
 
     return (
         <div>

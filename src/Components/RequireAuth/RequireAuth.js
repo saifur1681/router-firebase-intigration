@@ -5,10 +5,10 @@ import app from '../../Firebase-init';
 import { Navigate, useLocation } from 'react-router-dom'
 
 
+
 const auth = getAuth(app);
 
 const RequireAuth = ({ children }) => {
-
     const [user] = useAuthState(auth)
     const location = useLocation();
 
