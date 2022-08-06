@@ -15,7 +15,7 @@ const Header = () => {
 
     const handleSignOut = () => {
         signOut(auth)
-    }
+    };
 
     return (
         <div className="header-style" >
