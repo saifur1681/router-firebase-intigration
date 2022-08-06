@@ -11,7 +11,7 @@ const auth = getAuth(app);
 
 const Header = () => {
 
-    const [user] = useAuthState(auth)
+    const [user] = useAuthState(auth);
 
     const handleSignOut = () => {
         signOut(auth);
