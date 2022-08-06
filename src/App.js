@@ -11,7 +11,7 @@ import RequireAuth from './Components/RequireAuth/RequireAuth';
 
 
 function App() {
-  
+
   return (
     <div className="App">
       <Header></Header>
@@ -32,6 +32,6 @@ function App() {
       </Routes>
     </div >
   );
-}
+};
 
 export default App;
